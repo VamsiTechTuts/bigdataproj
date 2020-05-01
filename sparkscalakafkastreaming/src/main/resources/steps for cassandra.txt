@@ -1,0 +1,10 @@
+CREATE KEYSPACE sparkcassandra
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+CREATE TABLE sparkcassandra.employee(
+   empid text PRIMARY KEY,
+   empname text,
+   empsal text,
+
+   );
+
