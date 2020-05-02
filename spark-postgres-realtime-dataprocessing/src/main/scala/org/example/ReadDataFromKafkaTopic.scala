@@ -15,17 +15,22 @@ object ReadDataFromKafkaTopic {
     val inputDf = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "localhost:9092")
-      .option("subscribe", "test")
+      .option("subscribe", "orders-status")
       .load()
 
-    val employeeJsonDf = inputDf.selectExpr("CAST(value AS STRING)")
-    val struct = new StructType()
+    val orderJsonDf = inputDf.selectExpr("CAST(value AS STRING)")
+    /*val struct = new StructType()
       .add("empid", DataTypes.StringType)
       .add("empname", DataTypes.StringType)
-      .add("empsal", DataTypes.StringType)
+      .add("empsal", DataTypes.StringType)*/
 
-    val  employeeNestedDf = employeeJsonDf.select(from_json($"value", struct).as("employee"))
-    val employeeFlattenedDf = employeeNestedDf.selectExpr("employee.empid", "employee.empname", "employee.empsal")
+    /*val struct = new StructType()
+      .add("orderDateTime", DataTypes.StringType)
+      .add("orderId", DataTypes.StringType)
+      .add("orderStatus", DataTypes.StringType)*/
+
+   // val  employeeNestedDf = orderJsonDf.select(from_json($"value", struct).as("order"))
+   // val employeeFlattenedDf = employeeNestedDf.selectExpr("employee.empid", "employee.empname", "employee.empsal")
 
 
     /* val payloadDf = inputDf.selectExpr("CAST(value AS STRING)").as[String]
@@ -44,12 +49,12 @@ object ReadDataFromKafkaTopic {
     val url = "jdbc:postgresql://localhost:5432/postgres"
     val user = "postgres"
     val pw = "postgres"
-    val jdbcWriter = new PostgreSqlSink(url,user,pw)
+    val jdbcWriter = new PostgreSqlSinkForOrder(url,user,pw)
    /* val res = split_col
       .withColumn("empid", empid)
       .withColumn("empname", empname)
       .withColumn("empsal", empsal)*/
-    val writeData = employeeJsonDf.writeStream
+    val writeData = orderJsonDf.writeStream
       .foreach(jdbcWriter)
       .trigger(Trigger.ProcessingTime("5 seconds"))
       .outputMode("append")

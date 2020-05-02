@@ -28,6 +28,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/org/example" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SRINADH\IdeaProjects\spark-postgres-realtime-dataprocessing\src\main\scala\org\example" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ReadDataFromKafkaTopic" type="Application" factoryName="Application" temporary="true">
@@ -83,22 +89,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="560" y="66" width="593" height="596" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1588349496995" />
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom" timestamp="1588349511043">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1588389019869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588349511043" />
-    <state width="1322" height="216" key="GridCell.Tab.0.center" timestamp="1588349511043">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588389019868" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1588389019868">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588349511043" />
-    <state width="1322" height="216" key="GridCell.Tab.0.left" timestamp="1588349511042">
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588389019868" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1588389019866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588349511042" />
-    <state width="1322" height="216" key="GridCell.Tab.0.right" timestamp="1588349511043">
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588389019866" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1588389019868">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588349511043" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588389019868" />
     <state width="1322" height="216" key="GridCell.Tab.1.bottom" timestamp="1588349511043">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
